@@ -7,6 +7,7 @@ name = "ecmwf-grib-processor"
 version = "0.1.0"
 description = "Turn ECMWF GRIB2 fields into browser-friendly weather layers"
 readme = "README.md"
+license = { file = "LICENSE" }
 requires-python = ">=3.9"
 dependencies = [
   "contourpy>=1.2,<2",

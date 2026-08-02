@@ -95,3 +95,9 @@ pytest
 ```
 
 单元测试覆盖单位换算与配色；使用真实 GRIB2 运行命令是端到端验收。
+
+## 许可证与数据使用
+
+本项目自行编写的源码和文档采用 [Apache License 2.0](LICENSE) 开源。该许可证不改变输入数据、输出数据或第三方依赖各自的权利状态。
+
+仓库不包含 ECMWF 原始 GRIB2 或处理后的预报数据。使用者应自行确认输入数据的授权条件；由 ECMWF Open Data 生成的 PNG、JSON、二进制网格等派生数据仍应遵守 ECMWF 的 [数据使用条款](https://apps.ecmwf.int/datasets/licences/general/) 和 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 署名要求，并明确标注数据经过了转换。推荐的署名、修改说明和免责声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
