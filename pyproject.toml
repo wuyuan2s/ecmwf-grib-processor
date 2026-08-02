@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecmwf-grib-processor"
+version = "0.1.0"
+description = "Turn ECMWF GRIB2 fields into browser-friendly weather layers"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "contourpy>=1.2,<2",
+  "eccodes>=2.35,<3",
+  "numpy>=1.24,<3",
+  "Pillow>=10,<12",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7,<9"]
+
+[project.scripts]
+ecmwf-process = "ecmwf_processor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
